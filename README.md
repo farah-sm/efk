@@ -8,6 +8,11 @@ This README provides a guide to setting up the EFK (Elasticsearch, Fluent Bit, K
 * `kubectl` configured to interact with your cluster.
 * `helm` installed.
 
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fahmedhosameldein.wordpress.com%2F2021%2F03%2F25%2Finstall-elk-stack-on-azure-kubernetes-cluster-aks-using-helm%2F&psig=AOvVaw0MEkzOp0Lchn8xkgnTbbfO&ust=1735601283863000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwit5J7hkM6KAxX5ckEAHTDeJOkQjRx6BAgAEBk
+
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fopstree.com%2Fblog%2F2023%2F01%2F24%2Fprotected-efk-stack-setup-for-kubernetes%2F&psig=AOvVaw35vK4mGGjBl6urokylaAil&ust=1735601271345000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwiT5KLbkM6KAxXHTUEAHc1RIzQQjRx6BAgAEBk
+
+
 ## Installation
 
 ### 1. Create a Namespace
