@@ -93,7 +93,7 @@ Accessing Kibana
 
 kubectl get service kibana -n logging
 ```
-2. Open your browser and navigate to http://<EXTERNAL-IP>:5601.
+2. Open your browser and navigate to http://<EXTERNAL-IP>:<your-port>.
 
 3. Log in with the Elasticsearch credentials.
 
