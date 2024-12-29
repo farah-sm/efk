@@ -39,8 +39,6 @@ helm repo update
 
 helm install elasticsearch \
   --set replicas=1 \
-  --set volumeClaimTemplate.storageClassName=gp2 \
-  --set persistence.labels.enabled=true \
   elastic/elasticsearch -n logging
 ```
 4. Install Kibana
