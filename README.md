@@ -22,7 +22,6 @@ helm repo update
 ```bash
 helm install elasticsearch \
   --set replicas=1 \
-  --set volumeClaimTemplate.storageClassName=gp2 \
   --set persistence.labels.enabled=true \
   elastic/elasticsearch -n logging
 ```
