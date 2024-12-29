@@ -12,7 +12,7 @@ This README provides a guide to setting up the EFK (Elasticsearch, Fluent Bit, K
 
 ### 1. Create a Namespace
 
-```bash
+```Bash
 kubectl create namespace logging
 ```
 2. Add Helm Repositories
@@ -52,10 +52,12 @@ kubectl get secrets --namespace=logging elasticsearch-master-credentials -ojsonp
 Important: Store these credentials securely.
 
 6. Configure Fluent Bit
+   
 ```
 Create a fluentbit-values.yaml file.
 Locate the HTTP_Passwd field and replace the placeholder with the Elasticsearch password from the previous step.
 ```
+
 ```YAML
 
 service:
@@ -87,6 +89,7 @@ kubectl get service kibana -n logging
 3. Log in with the Elasticsearch credentials.
 
 Clean Up
+
 ```Bash
 
 helm uninstall fluent-bit -n logging
@@ -97,8 +100,8 @@ kubectl delete namespace logging
 ```
 Important Notes
 * This is a basic setup. For production, consider:
-** Increased Elasticsearch replicas for high availability.
-** Resource limits for pods.
-** TLS encryption for secure communication.
-** Advanced log processing with Fluentd or Logstash.
+  * Increased Elasticsearch replicas for high availability.
+  * Resource limits for pods.
+  * TLS encryption for secure communication.
+  * Advanced log processing with Fluentd or Logstash.
 * Refer to the official documentation for Elasticsearch, Kibana, and Fluent Bit for the latest information and advanced configuration options.
