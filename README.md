@@ -8,9 +8,15 @@ This README provides a guide to setting up the EFK (Elasticsearch, Fluent Bit, K
 * `kubectl` configured to interact with your cluster.
 * `helm` installed.
 
+Traditionally:
 ![elk](https://github.com/user-attachments/assets/2cb0d189-87f0-4d10-ab6a-971a1b22e0fa)
+_____________________
+Today's deployment:
 ![efk](https://github.com/user-attachments/assets/2344983b-3e89-4b80-b275-966ad2dd851d)
 
+Main Difference:
+* Logstash is an aggregator whereas fluentbit is a forwarder, Logstash is far more customisable, it has far more richer features, allowing you to filter out the logs, advanced labelling, filtering before forwarding to elastic search. 
+* Fluentbit also has similar offerings, but typically fluentbit forwards straight from the node to  elastic search.  FluentBit is far more lightwight. 
 
 
 ## Installation
