@@ -70,7 +70,7 @@ env:
 ```
 7. Install Fluent Bit
 
-```Bash
+```
 
 helm install fluent-bit \
   fluent/fluent-bit \
