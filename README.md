@@ -5,7 +5,6 @@ This guide outlines the steps to install and configure the EFK (Elasticsearch, F
 
 ## 1. Create a Namespace
 
-```bash
 kubectl create namespace logging
 ```
 
